@@ -1,0 +1,17 @@
+
+<div class="d-grid gap-2">
+ <center> <div class="text-bg-success p-2 border"><%= render @user %></div></center>
+  <% Task.where(user_id: @user.id).each do |task|%><br>
+  <div class="text-bg-light p-1 border"><%= render  "tasks/task", :task => task %></div>
+</div>
+<%end%>
+
+<center><br><%= link_to "Edit user", edit_user_path(@user), class:"btn btn-success" %> 
+  <%= link_to "Back to user", users_path, class:"btn btn-success" %>
+  <%= button_to "Destroy this user", @user, method: :delete,class:"btn btn-success m-3"  %>
+  </center>
+
+  
+
+
+

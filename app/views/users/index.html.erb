@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>User</h1>
+<table class="table table-bordered table-striped table hover">
+ <thead class="table-dark">
+  <tr>
+    <th><center>First Name</th>
+    <th><center>Last Name</th>
+    <th><center>Dob</th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+  <% @users.each do |user| %>
+  <tr>
+    <td class="table-success"><center><%= user.first_name %></td>
+    <td class="table-light"><center><%= user.last_name %></td>
+    <td class="table-success"><center><%= user.dob %></td>
+    <td><center><%=link_to 'Show', user, class:"btn btn-success" %></td>
+    <td><center><%=link_to 'Edit', edit_user_path(user), class:"btn btn-success" %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to "New user", new_user_path, class:"btn btn-dark" %>
+
