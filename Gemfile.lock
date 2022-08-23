@@ -135,10 +135,13 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.8-x64-mingw-ucrt)
+    nokogiri (1.13.8-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.8-x64-unknown)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.4.3-x64-mingw-ucrt)
+    pg (1.4.3-x64-mingw32)
+    pg (1.4.3-x64-unknown)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -226,13 +229,14 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x64-mingw32
+  x64-unknown
 
 DEPENDENCIES
   bootsnap
   capybara
   debug
-  devise
+  devise (~> 4.8, >= 4.8.1)
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -247,7 +251,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 2.7.6p219
 
 BUNDLED WITH
    2.3.7

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new user from <%= @user.name %>!</p>
+    <p>
+    user details<br>
+    --------------------------
+    </p>
+    <p>first_name: <%= @user.first_name %></p>
+    <p>last_name: <%= @user.last_name %></p>
+    <p>dob: <%= @user.dob %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @user.message %></p>
+  </body>
+</html>
