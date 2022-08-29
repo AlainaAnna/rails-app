@@ -6,9 +6,9 @@
 </div>
 <%end%>
 
-<center><br><%= link_to "Edit user", edit_user_path(@user), class:"btn btn-success" %> 
-  <%= link_to "Back to user", users_path, class:"btn btn-success" %>
-  <%= button_to "Destroy this user", @user, method: :delete,class:"btn btn-success m-3"  %>
+<center><br><br><%= link_to t('action.edit_user'), edit_user_path(@user), class:"btn btn-success" %> 
+  <%= link_to t('action.back_user'), users_path, class:"btn btn-success" %>
+  <br><br><%= button_to t('action.destroy_user'), @user, method: :delete,class:"btn btn-success m-3"  %>
   </center>
 
   

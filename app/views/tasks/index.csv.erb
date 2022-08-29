@@ -1,0 +1,4 @@
+<%= CSV.generate_line(["name","duedate","status","user_id","created_at","updated_at"])%>
+<% @tasks.each do |task|%>
+<%= CSV.generate_line([task.name,task.duedate,task.status,task.user_id,task.created_at,task.updated_at])%>
+<% end%>

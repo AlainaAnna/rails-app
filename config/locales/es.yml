@@ -1,0 +1,27 @@
+es:
+  static_content:
+    welcome: "Willkommen bei der Aufgabenverwaltung"
+  link:
+   sign_up: "Anmelden"
+   sign_in: "Schild"
+   edit_profile: "Profil bearbeiten"
+   user_list: "User_Liste"
+   task_list: "Aufgabenliste"
+   new_task: "neue Aufgabe"
+   sign_out: "austragen"
+  
+  action:
+    update: "aktualisieren"
+    create: "schaffen"
+    cancel_account: "Account löschen"
+    back: "der Rücken"
+    forget_password: "Passwort vergessen"
+    show_user: "der Nutzer"
+    show_task: "die Aufgabe"
+    back_user: "zurück zum Benutzer"
+    back_task: "zurück zur Aufgabe"
+    create_task: "Aufgabe erstellen"
+    edit_task: "Aufgabe bearbeiten"
+    edit_user: "Benutzer bearbeiten"
+    destroy_task: "Aufgabe zerstören"
+    destroy_user: "Benutzer zerstören"

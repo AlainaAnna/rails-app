@@ -1,4 +1,8 @@
 class HomeController < ApplicationController
     def index
-    end
+        respond_to do |format|
+            format.html
+            format.js   { render "tasks/task", :layout => false }
+        end
+    end 
 end

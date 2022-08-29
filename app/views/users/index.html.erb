@@ -16,11 +16,13 @@
     <td class="table-success"><center><%= user.first_name %></td>
     <td class="table-light"><center><%= user.last_name %></td>
     <td class="table-success"><center><%= user.dob %></td>
-    <td><center><%=link_to 'Show', user, class:"btn btn-success" %></td>
-    <td><center><%=link_to 'Edit', edit_user_path(user), class:"btn btn-success" %></td>
+    <td><center><%=link_to t('action.show_user'), user, class:"btn btn-success" %></td>
+    
+    <td><center><%=link_to t('action.edit_user'), edit_user_path(user), class:"btn btn-success" %></td>
   </tr>
 <% end %>
 </table>
 <br />
-
+<%= link_to "Export as Csv", users_path(format: :csv) ,class:"btn btn-success m-3"%>
+<%= link_to "Export as Pdf", users_path(format: 'pdf'), class:"btn btn-success m-3" %>
 

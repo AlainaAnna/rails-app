@@ -2,7 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.6"
-
+gem 'rails-i18n', '~> 7.0', '>= 7.0.5'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
@@ -31,7 +31,7 @@ gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
-
+gem 'jquery-rails'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -41,15 +41,16 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", '~>1.2021','>=1.2021.5'
 
+gem 'whenever', require: false
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-
-
+gem 'rufus-scheduler', '~> 3.8', '>= 3.8.2'
 # Use Sass to process CSS
 # gem "sassc-rails"
-
+gem 'prawn', '~> 2.4'
+gem 'prawn-table', '~> 0.2.2'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

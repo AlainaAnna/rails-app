@@ -99,8 +99,8 @@ config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
   :user_name            => "annaalaina21gmail.com",
-  :password             => "jwraorddhwtbmcbq",
-  :authentication       => "plain",
+  :password             => "orfuamxzgpfhoijn",
+  :authentication       => "login",
   :enable_starttls_auto => true
 }
   
