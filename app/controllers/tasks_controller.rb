@@ -7,6 +7,7 @@ class TasksController < ApplicationController
   # GET /tasks or /tasks.json
   def index
     @tasks = Task.all
+    
     respond_to do |format|
       format.html
       format.pdf do
@@ -51,7 +52,7 @@ end
       
     respond_to do |format|
       if @task.save
-        UserMailer.with(user: @user,task: @task).task_assigned.deliver_now
+       # UserMailer.with(user: @user,task: @task).task_assigned.deliver_now
         format.html { redirect_to task_url(@task), notice:["Task was successfully created."] }
         format.json { render :show, status: :created, location: @task }
       else
@@ -68,7 +69,7 @@ end
     respond_to do |format|
       if @task.update(task_params)
         @user = User.find_by_id(@task.user_id)
-        UserMailer.with(user: @user,task: @task).task_updated.deliver_now
+        #UserMailer.with(user: @user,task: @task).task_updated.deliver_now
         format.html { redirect_to task_url(@task), notice: ["Task was successfully updated."] }
         format.json { render :show, status: :ok, location: @task }
         format.js

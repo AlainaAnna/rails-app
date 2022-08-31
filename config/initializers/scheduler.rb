@@ -1,6 +1,6 @@
 require 'rufus-scheduler'
 s = Rufus::Scheduler.singleton
-s.every '3600s' do
+s.every '1d' do
     task = Task.where("duedate <= ?",Time.now)
     if task.present?
       task.each do |task|

@@ -95,13 +95,13 @@ host = 'localhost:3000' #replace with your own url
 config.action_mailer.default_url_options = { host: ‘localhost’, port: 3000 }
 
 # SMTP settings for gmail
-config.action_mailer.smtp_settings = {
-  :address              => "smtp.gmail.com",
-  :port                 => 587,
-  :user_name            => "annaalaina21gmail.com",
-  :password             => "orfuamxzgpfhoijn",
-  :authentication       => "login",
-  :enable_starttls_auto => true
-}
+#config.action_mailer.smtp_settings = {
+ # :address              => "smtp.gmail.com",
+ # :port                 => 587,
+#  :user_name            => "annaalaina21gmail.com",
+#  :password             => "orfuamxzgpfhoijn",
+ # :authentication       => "login",
+#  :enable_starttls_auto => true
+#}
   
 end
